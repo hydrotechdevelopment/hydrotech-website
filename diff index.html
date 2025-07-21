@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hydrotech Development Inc.</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; color:#333; background:white;}
+    header { background:#0055A4; color:#fff; padding:20px 0; text-align:center;}
+    nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold;}
+    nav a:hover { text-decoration:underline; }
+    section { padding:40px 20px; max-width:900px; margin:auto;}
+    h1,h2 { color:#0055A4;}
+    .services { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px;}
+    .service-card { background:#f0f8ff; padding:20px; border-radius:10px; border:1px solid #cce6ff;}
+    form { display:flex; flex-direction:column; max-width:500px; margin:auto;}
+    input, textarea { margin-bottom:15px; padding:10px; font-size:16px; border:1px solid #ccc; border-radius:5px;}
+    button { background:#0055A4; color:white; padding:10px; font-size:16px; border:none; border-radius:5px; cursor:pointer;}
+    button:hover { background:#003f7d;}
+    footer { background:#0055A4; color:white; text-align:center; padding:20px; margin-top:40px; }
+    @media(max-width:600px){
+      nav a { display:block; margin:10px 0;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Hydrotech Development Inc.</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home">
+  <h2>Welcome to Hydrotech Development Inc.</h2>
+  <p>Providing reliable HVAC solutions across Oshawa and the GTA. Quality installation, repair, and maintenance services to keep your home comfortable year-round.</p>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>Hydrotech Development Inc. is owned by Vadzim Lapin, a certified 4th Class Operating Engineer with extensive HVAC expertise. Fluent in English and Russian, Vadzim ensures clear communication and professional results for every client.</p>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="service-card">
+      <h3>HVAC Installation</h3>
+      <p>Expert installation of heating, ventilation, and air conditioning systems tailored to your home's needs.</p>
+    </div>
+    <div class="service-card">
+      <h3>Repairs & Maintenance</h3>
+      <p>Fast and reliable repairs for furnaces, AC units, and ventilation to ensure optimal performance.</p>
+    </div>
+    <div class="service-card">
+      <h3>System Upgrades</h3>
+      <p>Upgrade your HVAC system for improved efficiency and comfort in all seasons.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>📞 Phone: <a href="tel:4163022112">416-302-2112</a><br>
+  ✉️ Email: <a href="mailto:hydrotechdevelopment@gmail.com">hydrotechdevelopment@gmail.com</a><br>
+  📍 Serving Oshawa and the Greater Toronto Area (GTA)</p>
+
+  <h3>Send us a message:</h3>
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 Hydrotech Development Inc. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
