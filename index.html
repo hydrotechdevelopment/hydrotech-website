@@ -21,22 +21,23 @@
       background: #004a99;
       color: white;
       padding: 20px;
-    }
-
-    header div {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      text-align: center;
     }
 
     header img {
-      height: 60px;
+      height: 120px;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      margin-top: 15px;
     }
 
     nav a {
       color: white;
-      margin: 0 15px;
+      margin: 0 20px;
       text-decoration: none;
+      font-size: 18px;
       font-weight: 500;
     }
 
@@ -50,11 +51,20 @@
       margin: auto;
     }
 
+    h1, h2 {
+      color: #004a99;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
     footer {
       background: #004a99;
       color: white;
       text-align: center;
       padding: 15px 10px;
+      margin-top: 40px;
     }
 
     input, textarea, button {
@@ -80,17 +90,15 @@
 <body>
 
   <header>
-    <div>
-      <a href="index.html">
-        <img src="logo.jpeg" alt="Hydrotech Development Inc. Logo">
-      </a>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+    <a href="index.html">
+      <img src="logo.jpeg" alt="Hydrotech Development Inc. Logo">
+    </a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <section id="home">
