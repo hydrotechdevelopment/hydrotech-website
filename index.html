@@ -1,4 +1,3 @@
-<!-- Trigger rebuild -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hydrotech Development Inc.</title>
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
@@ -14,176 +16,117 @@
       background: #f9f9f9;
       color: #333;
     }
-   <header>
-  <div style="display: flex; align-items: center; justify-content: space-between;">
-    <div>
-      <a href="index.html">
-        <img src="logo.jpeg" alt="Hydrotech Development Inc. Logo" style="height: 60px;">
-      </a>
-    </div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+
+    header {
+      background: #004a99;
+      color: white;
+      padding: 20px;
     }
+
+    header div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      height: 60px;
+    }
+
     nav a {
       color: white;
       margin: 0 15px;
       text-decoration: none;
       font-weight: 500;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
     section {
-      padding: 50px 20px;
+      padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
     }
-    h1, h2 {
-      color: #004a99;
-    }
-    .intro {
-      text-align: center;
-      font-size: 1.2rem;
-      line-height: 1.7;
-    }
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-      margin-top: 30px;
-    }
-    .service-card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    }
-    form {
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      max-width: 600px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-    }
-    input, textarea {
-      margin-bottom: 15px;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 1rem;
-    }
-    button {
-      background: #004a99;
-      color: white;
-      padding: 12px;
-      font-size: 1rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #003366;
-    }
+
     footer {
       background: #004a99;
       color: white;
       text-align: center;
-      padding: 20px;
-      margin-top: 50px;
+      padding: 15px 10px;
     }
-    @media (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
-      .intro {
-        font-size: 1rem;
-      }
+
+    input, textarea, button {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #004a99;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0066cc;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Hydrotech Development Inc.</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div>
+      <a href="index.html">
+        <img src="logo.jpeg" alt="Hydrotech Development Inc. Logo">
+      </a>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <section id="home">
-    <h2 style="font-size: 36px; text-align: center; margin-bottom: 10px;">Hydrotech Development Inc.</h2>
-    <p class="intro">
-      Reliable HVAC Services Across the GTA. <br>
-      Providing expert installation, repair, and upgrades for residential systems in Oshawa and surrounding areas.
-    </p>
+    <h1>Welcome to Hydrotech Development Inc.</h1>
+    <p>Providing expert HVAC services with quality and reliability across the GTA.</p>
   </section>
 
   <section id="about">
     <h2>About Us</h2>
-    <p style="line-height: 1.7; font-size: 1.05rem;">
-      Owned and operated by <strong>Vadzim Lapin</strong>, a certified <strong>4th Class Operating Engineer</strong>,
-      Hydrotech Development Inc. provides top-tier HVAC services across the Greater Toronto Area.
-      Fluent in English and Russian, Vadzim is known for his precision, reliability, and customer-first attitude.
-    </p>
+    <p>Hydrotech Development Inc. is a trusted name in heating, ventilation, and air conditioning. Led by Vadzim Lapin, our mission is to deliver top-tier solutions that keep your indoor environment comfortable and energy-efficient.</p>
   </section>
 
   <section id="services">
     <h2>Our Services</h2>
-    <div class="services">
-      <div class="service-card">
-        <h3>HVAC Installation</h3>
-        <p>Custom installation of furnaces, air conditioners, and ductwork for homes and small businesses.</p>
-      </div>
-      <div class="service-card">
-        <h3>Repair & Maintenance</h3>
-        <p>Fast, reliable repairs and seasonal maintenance to keep your systems running at peak performance.</p>
-      </div>
-      <div class="service-card">
-        <h3>System Upgrades</h3>
-        <p>Modernize your HVAC systems with energy-efficient upgrades for long-term savings and comfort.</p>
-      </div>
-      <div class="service-card">
-        <h3>Emergency Services</h3>
-        <p>Available for urgent repairs and system failures — especially in extreme weather conditions.</p>
-      </div>
-    </div>
+    <ul>
+      <li>HVAC Installation</li>
+      <li>Maintenance & Repairs</li>
+      <li>System Upgrades</li>
+      <li>Residential & Commercial Solutions</li>
+    </ul>
   </section>
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <p style="text-align: center;">
-      📞 <strong>Phone:</strong> <a href="tel:4163022112">416-302-2112</a><br>
-      ✉️ <strong>Email:</strong> <a href="mailto:hydrotechdevelopment@gmail.com">hydrotechdevelopment@gmail.com</a><br>
-      📍 <strong>Service Area:</strong> Oshawa and the Greater Toronto Area (GTA)
-    </p>
-
-    <h3 style="text-align: center;">Send Us a Message</h3>
-    <form action="https://formspree.io/f/xwpqvjjp" method="POST">
+    <form action="https://formspree.io/f/mzbqlzyo" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
       <button type="submit">Send Message</button>
-      <p style="font-size: 14px; color: gray; margin-top: 10px; text-align: center;">
-        We’ll respond as soon as possible. Thank you for reaching out!
-      </p>
     </form>
+    <p>Phone: 416-302-2112</p>
+    <p>Email: vadzim.lapin@gmail.com</p>
   </section>
 
   <footer>
-    <p>© 2025 Hydrotech Development Inc. | Website built by Vlad Lapin</p>
+    <p>&copy; 2025 Hydrotech Development Inc. All rights reserved.</p>
   </footer>
 
 </body>
