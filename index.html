@@ -7,135 +7,133 @@
   <style>
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
       font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
+      background: #f0f4f8;
       color: #333;
+      line-height: 1.6;
     }
 
     header {
       background: #004a99;
-      color: white;
-      padding: 20px;
       text-align: center;
+      padding: 40px 20px 30px;
     }
 
     header img {
-      height: 120px;
+      height: 130px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      color: #fff;
       margin-bottom: 10px;
     }
 
+    header p {
+      color: #cce0ff;
+      font-style: italic;
+    }
+
     nav {
-      margin-top: 15px;
+      background: #003870;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px 0;
     }
 
     nav a {
-      color: white;
-      margin: 0 20px;
+      color: #fff;
       text-decoration: none;
-      font-size: 18px;
+      padding: 12px 20px;
       font-weight: 500;
+      transition: background 0.3s;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      background: #0059c1;
     }
 
     section {
-      padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
+      padding: 50px 20px;
     }
 
-    h1, h2 {
+    h2 {
+      font-size: 2rem;
       color: #004a99;
+      margin-bottom: 20px;
+    }
+
+    p, li {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
     }
 
     ul {
       padding-left: 20px;
     }
 
-    footer {
-      background: #004a99;
-      color: white;
-      text-align: center;
-      padding: 15px 10px;
-      margin-top: 40px;
-    }
-
-    input, textarea, button {
-      display: block;
+    form input, form textarea, form button {
       width: 100%;
+      padding: 12px;
       margin-bottom: 15px;
-      padding: 10px;
-      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
     }
 
-    button {
+    form button {
       background-color: #004a99;
       color: white;
       border: none;
       cursor: pointer;
+      transition: background 0.3s ease;
     }
 
-    button:hover {
+    form button:hover {
       background-color: #0066cc;
+    }
+
+    footer {
+      background: #003870;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        padding: 10px;
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <a href="index.html">
-      <img src="logo.jpeg" alt="Hydrotech Development Inc. Logo">
-    </a>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <img src="logo.jpeg" alt="Hydrotech Development Inc. Logo">
+    <h1>Hydrotech Development Inc.</h1>
+    <p>Reliable. Experienced. Family-Owned HVAC Solutions in the GTA</p>
   </header>
 
-  <section id="home">
-    <h1>Welcome to Hydrotech Development Inc.</h1>
-    <p>Providing expert HVAC services with quality and reliability across the GTA.</p>
-  </section>
-
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Hydrotech Development Inc. is a trusted name in heating, ventilation, and air conditioning. Led by Vadzim Lapin, our mission is to deliver top-tier solutions that keep your indoor environment comfortable and energy-efficient.</p>
-  </section>
-
-  <section id="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>HVAC Installation</li>
-      <li>Maintenance & Repairs</li>
-      <li>System Upgrades</li>
-      <li>Residential & Commercial Solutions</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/mzbqlzyo" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <p>Phone: 416-302-2112</p>
-    <p>Email: vadzim.lapin@gmail.com</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Hydrotech Development Inc. All rights reserved.</p>
-  </footer>
-
-</body>
-</html>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
