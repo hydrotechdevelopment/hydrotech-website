@@ -25,8 +25,9 @@
     }
 
     header img {
-      height: 130px;
-      border-radius: 10px;
+      height: 120px;
+      max-width: 100%;
+      object-fit: contain;
       margin-bottom: 20px;
     }
 
@@ -162,14 +163,18 @@
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/mzbqlzyo" method="POST">
+    <form action="https://formsubmit.co/contact@hydrotechdevelopment.ca" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+      <input type="hidden" name="_next" value="https://hydrotechdevelopment.ca/#contact">
+      <input type="hidden" name="_captcha" value="false">
+
       <button type="submit">Send Message</button>
     </form>
     <p><strong>Phone:</strong> 416-302-2112</p>
-    <p><strong>Email:</strong> vadzim.lapin@gmail.com</p>
+    <p><strong>Email:</strong> contact@hydrotechdevelopment.ca</p>
   </section>
 
   <footer>
