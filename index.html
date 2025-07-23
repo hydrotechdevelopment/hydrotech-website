@@ -7,88 +7,61 @@
   <style>
     * {
       box-sizing: border-box;
-      margin: 0;
-      padding: 0;
     }
 
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
       color: #333;
-      line-height: 1.6;
     }
 
     header {
       background: #004a99;
+      color: white;
+      padding: 30px 20px;
       text-align: center;
-      padding: 40px 20px 30px;
     }
 
-    header img {
-      height: 120px;
-      max-width: 100%;
-      object-fit: contain;
-      margin-bottom: 20px;
-    }
-
-    header h1 {
-      font-size: 2.4rem;
-      color: #fff;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      color: #cce0ff;
-      font-style: italic;
-    }
-
-    nav {
-      background: #003870;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 10px 0;
+    .logo {
+      max-width: 180px;
+      height: auto;
+      padding: 12px;
+      background-color: white;
+      border-radius: 10px;
+      display: block;
+      margin: 0 auto 10px;
+      box-sizing: border-box;
     }
 
     nav a {
-      color: #fff;
+      color: white;
+      margin: 0 15px;
       text-decoration: none;
-      padding: 12px 20px;
       font-weight: 500;
-      transition: background 0.3s;
     }
 
     nav a:hover {
-      background: #0059c1;
+      text-decoration: underline;
     }
 
     section {
-      max-width: 1000px;
+      padding: 40px 20px;
+      max-width: 800px;
       margin: auto;
-      padding: 50px 20px;
     }
 
-    h2 {
-      font-size: 2rem;
-      color: #004a99;
-      margin-bottom: 20px;
+    form {
+      display: flex;
+      flex-direction: column;
     }
 
-    p, li {
-      font-size: 1.1rem;
+    input, textarea {
+      padding: 10px;
       margin-bottom: 15px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    form input, form textarea, form button {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 15px;
-      border-radius: 5px;
       border: 1px solid #ccc;
+      border-radius: 4px;
       font-size: 1rem;
     }
 
@@ -96,6 +69,9 @@
       background-color: #004a99;
       color: white;
       border: none;
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 4px;
       cursor: pointer;
       transition: background 0.3s ease;
     }
@@ -125,59 +101,49 @@
   </style>
 </head>
 <body>
-
   <header>
-    <img src="logo.jpeg" alt="Hydrotech Development Inc. Logo">
+    <img src="images/logo.png" alt="Hydrotech Logo" class="logo" />
     <h1>Hydrotech Development Inc.</h1>
-    <p>Reliable. Experienced. Family-Owned HVAC Solutions in the GTA</p>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
   <section id="home">
-    <h2>Welcome</h2>
-    <p>At Hydrotech Development Inc., we provide high-quality, professional HVAC services with a personal touch. As a family-run business, we take pride in treating every home and business like our own — with honesty, reliability, and care.</p>
+    <h2>Welcome to Hydrotech</h2>
+    <p>A family-based HVAC business committed to quality, reliability, and trust. We provide top-tier heating, cooling, and ventilation services to residential and commercial clients.</p>
   </section>
 
   <section id="about">
     <h2>About Us</h2>
-    <p>Founded by Vadzim Lapin, Hydrotech Development Inc. has served the Greater Toronto Area with excellence and integrity. We are a proud family-owned company, built on decades of hands-on experience in heating, cooling, and ventilation systems.</p>
-    <p>We believe in building long-term relationships with our clients by delivering personalized service, transparent pricing, and consistent results.</p>
+    <p>Hydrotech Development Inc. is a proudly family-run company with years of experience in the HVAC industry. We prioritize customer satisfaction, long-lasting solutions, and honest workmanship.</p>
   </section>
 
   <section id="services">
     <h2>Our Services</h2>
     <ul>
-      <li>Residential & Commercial HVAC Installations</li>
-      <li>System Repairs & Emergency Maintenance</li>
-      <li>Energy-Efficient HVAC Upgrades</li>
-      <li>Custom Heating & Cooling Solutions</li>
-      <li>Seasonal Inspections & Tune-Ups</li>
+      <li>Heating Installation & Repair</li>
+      <li>Air Conditioning Services</li>
+      <li>Ventilation Systems</li>
+      <li>Preventative Maintenance</li>
     </ul>
   </section>
 
-<section id="contact">
-  <h2>Contact Us</h2>
-  <form action="https://formspree.io/f/xldljagr" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Your Email" required />
-    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
-
-    <p><strong>Phone:</strong> 416-302-2112</p>
-    <p><strong>Email:</strong> hydrotechdevelopment@gmail.com</p>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/xldljagr" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 Hydrotech Development Inc. | Proudly family-owned and serving the GTA</p>
+    <p>&copy; 2025 Hydrotech Development Inc. | Email: hydrotechdevelopment@gmail.com | Phone: 416-302-2112</p>
   </footer>
-
 </body>
 </html>
